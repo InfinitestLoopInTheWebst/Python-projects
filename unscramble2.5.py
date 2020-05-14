@@ -13,14 +13,12 @@ def load_dictionaries(url, user_input):
 
 def letter_word_list(data, user_input):
     letters = list(user_input)
-    #letters = ["e", "g", "o", "s", "u", "l", "p", "i", "a", "z"]
     words = []
 
     for word in data:
         words.append(word)
 
     n = 0
-    #print(letters)
     while n < len(words):
         unscrambler(words[n], letters)
         n +=1
